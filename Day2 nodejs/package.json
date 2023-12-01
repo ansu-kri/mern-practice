@@ -1,0 +1,12 @@
+{
+  "name": "first_project_node",
+  "version": "1.0.0",
+  "description": "\"this is the first project",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ansu",
+  "license": "ISC"
+}
