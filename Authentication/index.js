@@ -18,7 +18,7 @@ app.post("/register", async (req, res) => {
     try {
         const user = new USerModel(payload)
         await user.save() //while inserting one
-        res.send("Registered")
+        // res.send("Registered")
     } catch (er) {
         res.send("Error in user")
         console.log(er)
@@ -42,7 +42,7 @@ app.post("/login", async (req, res) => {
         res.send("Some went wrong")
         console.log(er)
     }
-    res.send("LogIn")
+    // res.send("LogIn")
 })
 
 app.get("/about", (req, res) => {
@@ -86,7 +86,7 @@ app.get("/contact", (req, res) => {
 
 
 
-app.listen(8080, () => {
+app.listen(8000, () => {
     try {
         connection
         console.log("connected")
@@ -94,5 +94,5 @@ app.listen(8080, () => {
         console.log("Trouble connecting")
         console.log(err)
     }
-    console.log("running at port 8080")
+    console.log("running at port 8000")
 })
